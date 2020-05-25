@@ -13,20 +13,22 @@ It helps you to graph any number of equations onto one single graph. This makes 
 Code for it:
 `
 g = Grapher(
-    ['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'],  # Equations to Compare
-    lb=-3, # Lower Bound (default=-10)
-    ub=3, # Upper Bound (default=10)
-    lol='lower center', # Location of Legend (default='upper left')
-    title='Taylor Polynomial for cos(x)' # Title for the Graph (default=None)
-)
-g.plot() # Plots the Graph and shows it to us.
+    ['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'],  # Equations to Compare<br>
+    lb=-3, # Lower Bound (default=-10)<br>
+    ub=3, # Upper Bound (default=10)<br>
+    lol='lower center', # Location of Legend (default='upper left')<br>
+    title='Taylor Polynomial for cos(x)' # Title for the Graph (default=None)<br>
+)<br>
+g.plot() # Plots the Graph and shows it to us.<br>
 `
 # Features
 - Code Tolerance. So, `sin(x)` is the best way to write but `sinx` is also acceptable. Similar for all Trignometriic Functions.
 - Build in functions for commonly used Mathmatical Operations. Eg: sin, cos, tan, cosec, sec, cot, log, ln, factorial, sqrt, cbrt and constants like pi and e.
 
 <br>
+
 # Usage
+
 Grapher(fx, lb=-10, ub=10, step=0.01, label=True, grid=False, xlabel='x', title=None, lol='upper left', linestyle='-', mode='light', style=None)
 
 `fx` = An Array for functions to be graphed.<br>
@@ -40,40 +42,40 @@ g.plot()
 `
 <img src="https://i.imgur.com/jFuA5Oq.png">
 #
-`lb=-10, ub=10`
+`lb=-10, ub=10`<br>
 They define the Lower Bound and the Upper Bound of the Function. Mathematically the domain of the function.
 <br>
-`step=0.01`
+`step=0.01`<br>
 This is by how much the next number is more than the other. Try to keep it low for a better and more accurate result. <br>
 Step of 0.01 is a preety good step for accuracy. But 0.001 is even better. But decreasing it too low may cause the program to slow down as a lot of computation needs to be done.<br>
 Therefore 0.01 is probably the sweet spot. But you know better for your own given equation and comutational speed.
 <br><br>
 #### Now Comes the features for customization of the looks of the graph.
-`label=True`
+`label=True`<br>
 It is just the legend on the Graph. It helps to keep track of the function by color coding them.
 <br>
-`grid=False`
+`grid=False`<br>
 This makes grid on the graph for better precision.
 <br>
-`xlabel='x', title=None`
+`xlabel='x', title=None`<br>
 xlabel is the label of the X-axis of the graph. When set to some value Eg: 'Month', ylabel is set to f (Month) automatically.<br>
 To change the ylabel, do g.ylabel = 'Your Y Label here.'
 <br>
 Title is the overall title of the page. Eg: 'Comparing cos(x) with its 4th order Taylor Polynomial.'
 <br>
 
-`lol='upper left'`
+`lol='upper left'`<br>
 lol stands for Location of Legend. It takes standard values as by matplotlib.
 <br>
 
-`linestyle='-'`
+`linestyle='-'`<br>
 This is the style of line that you want to have for your graph. (Values same as matplotlib.)
 <br>
-`mode='light'`
+`mode='light'`<br>
 This has 2 Options. light/dark. Dark will make it with a black background and light text and graph lines.
 <img src="https://i.imgur.com/a00YFpx.png">
 <br>
-`style=None`
+`style=None`<br>
 If you want more customization, then you can give a string of any style available for matplotlib. This can be used to make your Graphs look beautiful.
 <br>
 
@@ -100,6 +102,7 @@ You can use them all easily just by typing them, without even thinking about how
 <br>
 # Sample:
 some equations like, `['sinx', 'cosx', 'e^x', 'pi^tan(x)']` will work without any issue.
+<br>
 <img src="https://i.imgur.com/Ii8Cj7K.png">
 
 # Contribution
