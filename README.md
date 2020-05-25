@@ -10,17 +10,15 @@ It helps you to graph any number of equations onto one single graph. This makes 
 # Example
 <img src="https://i.imgur.com/t4NX73q.png">
 
-Code for it:
-`
-g = Grapher(
-    ['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'],  # Equations to Compare<br>
-    lb=-3, # Lower Bound (default=-10)<br>
-    ub=3, # Upper Bound (default=10)<br>
-    lol='lower center', # Location of Legend (default='upper left')<br>
-    title='Taylor Polynomial for cos(x)' # Title for the Graph (default=None)<br>
-)<br>
-g.plot() # Plots the Graph and shows it to us.<br>
-`
+Code for it:<br>
+`g = Grapher(`
+`['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'],  # Equations to Compare`<br>
+`lb=-3, # Lower Bound (default=-10)`<br>
+`ub=3, # Upper Bound (default=10)`<br>
+`lol='lower center', # Location of Legend (default='upper left')`<br>
+`title='Taylor Polynomial for cos(x)' # Title for the Graph (default=None))`<br>
+`g.plot() # Plots the Graph and shows it to us.`<br>
+
 # Features
 - Code Tolerance. So, `sin(x)` is the best way to write but `sinx` is also acceptable. Similar for all Trignometriic Functions.
 - Build in functions for commonly used Mathmatical Operations. Eg: sin, cos, tan, cosec, sec, cot, log, ln, factorial, sqrt, cbrt and constants like pi and e.
