@@ -8,7 +8,7 @@ setup(
   author = 'Shubham Gupta',
   author_email = 'thecodinghumans@gmail.com',
   url = 'https://github.com/ShubhamGupta-tch/grapher',
-  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.0.tar.gz',
+  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.1.tar.gz',
   keywords = ['maths', 'equations', 'graphs', 'Compare graphs', 'plot graphs', 'mathematics', 'graph comparision', 'comparing equations', 'equations comparision'],
   install_requires=[
           'matplotlib',
