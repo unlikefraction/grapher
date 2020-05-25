@@ -11,7 +11,7 @@ setup(
   download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.0.tar.gz',
   keywords = ['maths', 'equations', 'graphs', 'Compare graphs', 'plot graphs', 'mathematics', 'graph comparision', 'comparing equations', 'equations comparision'],
   install_requires=[
-          'matlplotlib',
+          'matplotlib',
           'numpy',
       ],
   classifiers=[  # Optional
