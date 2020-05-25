@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'grapher',
   packages = ['grapher'],
-  version = 'v1.0',
+  version = 'v1.1',
   license='MIT',
   description = 'Compare any number of Mathematical Equations and their graphs to see the level of similarity betweeb them in just one line of code. Eg: Taylor Polynomial',
   author = 'Shubham Gupta',
