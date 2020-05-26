@@ -7,6 +7,14 @@ This is a Graphing Library for
 
 It helps you to graph any number of equations onto one single graph. This makes it easy for determining the relation between some graphs and understaing better solutions.
 
+# Installation
+`pip install grapher`<br>
+Then you can access it using:<br>
+<br>
+`from grapher import Grapher`<br>
+`g = Grapher(['sinx', 'cosx'])`<br>
+`g.plot()`<br>
+<br>
 # Example
 <img src="https://i.imgur.com/t4NX73q.png">
 
