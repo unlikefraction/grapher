@@ -4,3 +4,4 @@ setup.cfg
 setup.py
 grapher\Grapher.py
 grapher\__init__.py
+grapher\__main__.py
