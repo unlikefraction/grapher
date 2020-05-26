@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'grapher',
   packages = ['grapher'],
-  version = 'v1.1',
+  version = 'v1.2',
   license='MIT',
   description = 'Compare any number of Mathematical Equations and their graphs to see the level of similarity betweeb them in just one line of code. Eg: Taylor Polynomial',
   author = 'Shubham Gupta',
   author_email = 'thecodinghumans@gmail.com',
   url = 'https://github.com/ShubhamGupta-tch/grapher',
-  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.1.tar.gz',
+  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.2.tar.gz',
   keywords = ['maths', 'equations', 'graphs', 'Compare graphs', 'plot graphs', 'mathematics', 'graph comparision', 'comparing equations', 'equations comparision'],
   install_requires=[
           'matplotlib',
