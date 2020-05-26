@@ -1,24 +1,15 @@
 from distutils.core import setup
 
-# read the contents of your README file
-from os import path
-this_directory = path.abspath(path.dirname(__file__))
-with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
-
 setup(
   name = 'grapher',
-  # other arguments omitted
-  long_description=long_description,
-  long_description_content_type='text/markdown',
   packages = ['grapher'],
-  version = 'v1.4',
+  version = 'v1.5',
   license='MIT',
   description = 'Compare any number of Mathematical Equations and their graphs to see the level of similarity betweeb them in just one line of code. Eg: Taylor Polynomial',
   author = 'Shubham Gupta',
   author_email = 'thecodinghumans@gmail.com',
   url = 'https://github.com/ShubhamGupta-tch/grapher',
-  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.4.tar.gz',
+  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.5.tar.gz',
   keywords = ['maths', 'equations', 'graphs', 'Compare graphs', 'plot graphs', 'mathematics', 'graph comparision', 'comparing equations', 'equations comparision'],
   install_requires=[
           'matplotlib',
