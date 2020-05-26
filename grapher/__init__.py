@@ -3,4 +3,5 @@ from grapher.Grapher import (Grapher,
                             factorial,
                             sqrt, cbrt,
                             log, ln,
-                            e, pi)
+                            e, pi,
+                            d)

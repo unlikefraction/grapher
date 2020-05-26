@@ -7,6 +7,17 @@ This is a Graphing Library for
 
 It helps you to graph any number of equations onto one single graph. This makes it easy for determining the relation between some graphs and understaing better solutions.
 
+# New
+### Now you can Differenciate any function you want.
+
+# Installation
+`pip install grapher`<br>
+Then you can access it using:<br>
+<br>
+`from grapher import Grapher`<br>
+`g = Grapher(['sinx', 'cosx'])`<br>
+`g.plot()`<br>
+<br>
 # Example
 <img src="https://i.imgur.com/t4NX73q.png">
 
@@ -15,6 +26,7 @@ Code for it:<br>
 `g.plot()`<br>
 
 # Features
+- Now you can differenciate any function you want and see its graph.
 - Code Tolerance. So, `sin(x)` is the best way to write but `sinx` is also acceptable. Similar for all Trignometriic Functions.
 - Build in functions for commonly used Mathmatical Operations. Eg: sin, cos, tan, cosec, sec, cot, log, ln, factorial, sqrt, cbrt and constants like pi and e.
 
@@ -87,7 +99,9 @@ Functions available to you.
 - ln(x)
 - sqtr(x)
 - cbrt(x)
-### Some Commonly used constants
+- d("func")
+### While using d (derivative as in d("cosx")), pass the function to be diffenciated within QUOTES. Technically, it should be a string. Otherwise it will throw an error.
+## Some Commonly used constants
 - pi
 - e
 <br>

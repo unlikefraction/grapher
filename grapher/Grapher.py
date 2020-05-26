@@ -61,6 +61,18 @@ def log(x, base=10):
     '''
     return ln(x)/ln(base)
 
+def d(x, dx, func):
+    '''
+    d(x, dx, func)
+    x -> Range/Domain of the Function
+    dx -> How small each successive part is
+    func -> It is the function to be differenciated.
+    '''
+    dx = float(dx)
+    eq = f"({func.replace('x', f'(x + {dx})') + f' - {func}'})/dx"
+    # print(eq)
+    return eval(eq)
+
 class Grapher:
     def __init__(self, fx, lb=-10, ub=10, step=0.01, label=True, grid=False, xlabel='x', title=None, lol="upper left", linestyle='-', mode='light', style=None):
         self.fx = fx
@@ -80,7 +92,7 @@ class Grapher:
 
     def valid_function(self, f):
         '''
-        Create a human readable str(equation) to a more executable form.
+        Converts a human readable str(equation) to a more executable form.
         sinx -> sin(x)
         2^4 -> 2**4
         '''
@@ -96,6 +108,7 @@ class Grapher:
         eq = eq.replace('cotx', 'cot(x)')
         eq = eq.replace('lnx', 'ln(x)')
         eq = eq.replace('logx', 'log(x)')
+        eq = eq.replace('d(', f'd(x, {self.step}, ')
 
         return eq
 
@@ -132,7 +145,34 @@ class Grapher:
 
         plt.show()
 
+    def examples(self):
+        '''
+        See some graphing examples.
+        '''
+        g = Grapher(['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'], lb=-3, ub=3, label=True, lol='lower center', title='Taylor Polynomial for cos(x)')
+        g.plot()
+        g = Grapher(['sinx', 'd("sinx")'], step=0.001, mode='dark')
+        g.plot()
+
+    def author(self):
+        '''
+        Well, wanna know about me? Run this method!
+        '''
+        plt.text(-9, 3, """Hi, I am Shubham. Hope you are enjoying Grapher.
+Try plotting something crazy!
+How About x^x or sinx and its derivative.
+And now, you need not even calculate it.
+Just type d("x^x") or d("sinx").
+Well, close this window to see them.""")
+        plt.plot(np.arange(-10, 10), np.arange(-10, 10))
+        plt.show()
+        g = Grapher(['x^x', 'd("x^x")'], 0, 1.5)
+        g.plot()
+        g = Grapher(['sinx', 'd("sinx")'], mode='dark')
+        g.plot()
+
 
 if __name__ == '__main__':
-    g = Grapher(['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'], lb=-3, ub=3, label=True, lol='lower center', title='Taylor Polynomial for cos(x)')
-    g.plot()
+    # g = Grapher(['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'], lb=-3, ub=3, label=True, lol='lower center', title='Taylor Polynomial for cos(x)')
+    g = Grapher(['cosx', 'd("cosx")'], step=0.001)
+    g.author()
