@@ -10,15 +10,15 @@ setup(
   name = 'grapher',
   # other arguments omitted
   long_description=long_description,
-  long_description_content_type='text/markdown'
+  long_description_content_type='text/markdown',
   packages = ['grapher'],
-  version = 'v1.3',
+  version = 'v1.4',
   license='MIT',
   description = 'Compare any number of Mathematical Equations and their graphs to see the level of similarity betweeb them in just one line of code. Eg: Taylor Polynomial',
   author = 'Shubham Gupta',
   author_email = 'thecodinghumans@gmail.com',
   url = 'https://github.com/ShubhamGupta-tch/grapher',
-  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.3.tar.gz',
+  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.4.tar.gz',
   keywords = ['maths', 'equations', 'graphs', 'Compare graphs', 'plot graphs', 'mathematics', 'graph comparision', 'comparing equations', 'equations comparision'],
   install_requires=[
           'matplotlib',
