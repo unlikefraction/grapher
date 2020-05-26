@@ -47,6 +47,9 @@ def cbrt(x):
     '''
     return round(x**(1./3.), 2)
 
+def ln(x):
+    return np.log(x)
+
 def log(x, base=10):
     '''
     Find Logarithm of a number x.
@@ -56,10 +59,7 @@ def log(x, base=10):
     log(64, 2)
     >>> 6.0
     '''
-    return math.log(x, base)
-
-def ln(x):
-    return log(x, e)
+    return ln(x)/ln(base)
 
 class Grapher:
     def __init__(self, fx, lb=-10, ub=10, step=0.01, label=True, grid=False, xlabel='x', title=None, lol="upper left", linestyle='-', mode='light', style=None):
@@ -134,5 +134,5 @@ class Grapher:
 
 
 if __name__ == '__main__':
-    g = Grapher(['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'], lb=-3, ub=3, label=True, lol='lower center', title='Taylor Polynomial for cos(x)')
+    g = Grapher(['log(x)', 'lnx'], lb=-3, ub=3, label=True, lol='lower center', title='Taylor Polynomial for cos(x)')
     g.plot()
