@@ -34,7 +34,7 @@ Code for it:<br>
 
 # Usage
 
-Grapher(fx, lb=-10, ub=10, step=0.01, label=True, grid=False, xlabel='x', title=None, lol='upper left', linestyle='-', mode='light', style=None)
+Grapher(fx, lb=-10, ub=10, y_lim=[None, None], step=0.01, label=True, grid=False, xlabel='x', title=None, lol='upper left', linestyle='-', mode='light', style=None)
 
 `fx` = An Array for functions to be graphed.<br>
 Eg:<br>
@@ -49,6 +49,11 @@ g.plot()
 #
 `lb=-10, ub=10`<br>
 They define the Lower Bound and the Upper Bound of the Function. Mathematically the domain of the function.
+<br>
+```y_lim=[None, None]```
+This is to make the graph spread across only a certain part of y.<br>
+You can use to get closer to any section along y axis.
+<br>
 <br>
 `step=0.01`<br>
 This is by how much the next number is more than the other. Try to keep it low for a better and more accurate result. <br>

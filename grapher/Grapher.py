@@ -74,10 +74,11 @@ def d(x, dx, func):
     return eval(eq)
 
 class Grapher:
-    def __init__(self, fx, lb=-10, ub=10, step=0.01, label=True, grid=False, xlabel='x', title=None, lol="upper left", linestyle='-', mode='light', style=None):
+    def __init__(self, fx, lb=-10, ub=10, y_lim=[None, None], step=0.01, label=True, grid=False, xlabel='x', title=None, lol="upper left", linestyle='-', mode='light', style=None):
         self.fx = fx
         self.lb = float(lb)
         self.ub = float(ub)
+        self.y_lim = y_lim
         self.step = float(step)
         self.grid = grid
         self.label = label
@@ -143,6 +144,7 @@ class Grapher:
         if self.title is not None:
             plt.title(self.title)
 
+        plt.axis((self.lb, self.ub, self.y_lim[0], self.y_lim[1]))
         plt.show()
 
     def examples(self):
@@ -174,5 +176,5 @@ Well, close this window to see them.""")
 
 if __name__ == '__main__':
     # g = Grapher(['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'], lb=-3, ub=3, label=True, lol='lower center', title='Taylor Polynomial for cos(x)')
-    g = Grapher(['cosx', 'd("cosx")'], step=0.001)
-    g.author()
+    g = Grapher(['1 + 1/x', 'x'], step=0.001, y_lim=[-5, 5])
+    g.plot()

@@ -14,16 +14,20 @@ It helps you to graph any number of equations onto one single graph. This makes 
 `pip install grapher`<br>
 Then you can access it using:<br>
 <br>
-`from grapher import Grapher`<br>
-`g = Grapher(['sinx', 'cosx'])`<br>
-`g.plot()`<br>
+```
+from grapher import Grapher
+g = Grapher(['sinx', 'cosx'])
+g.plot()
+```
 <br>
 # Example
 <img src="https://i.imgur.com/t4NX73q.png">
 
 Code for it:<br>
-`g = Grapher(['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'], lb=-3, ub=3, lol='lower center', title='Taylor Polynomial for cos(x)')`<br>
-`g.plot()`<br>
+```
+g = Grapher(['cos(x)', '1 - ((x^2)/factorial(2)) + (x^4)/factorial(4)'], lb=-3, ub=3, lol='lower center', title='Taylor Polynomial for cos(x)')
+g.plot()
+```
 
 # Features
 - Now you can differenciate any function you want and see its graph.
@@ -34,53 +38,57 @@ Code for it:<br>
 
 # Usage
 
-Grapher(fx, lb=-10, ub=10, step=0.01, label=True, grid=False, xlabel='x', title=None, lol='upper left', linestyle='-', mode='light', style=None)
+Grapher(fx, lb=-10, ub=10, y_lim=[None, None], step=0.01, label=True, grid=False, xlabel='x', title=None, lol='upper left', linestyle='-', mode='light', style=None)
 
 `fx` = An Array for functions to be graphed.<br>
 Eg:<br>
 ['sinx', 'cosx']<br>
 This is the only required argument.
 ### Output:
-`
+```
 g = Grapher(['sinx', 'cosx'])
 g.plot()
-`
+```
 <img src="https://i.imgur.com/jFuA5Oq.png">
 #
-`lb=-10, ub=10`<br>
+```lb=-10, ub=10```
 They define the Lower Bound and the Upper Bound of the Function. Mathematically the domain of the function.
 <br>
-`step=0.01`<br>
+```y_lim=[None, None]```
+This is to make the graph spread across only a certain part of y.<br>
+You can use to get closer to any section along y axis.
+<br>
+<br>
+```step=0.01```<br>
 This is by how much the next number is more than the other. Try to keep it low for a better and more accurate result. <br>
 Step of 0.01 is a preety good step for accuracy. But 0.001 is even better. But decreasing it too low may cause the program to slow down as a lot of computation needs to be done.<br>
 Therefore 0.01 is probably the sweet spot. But you know better for your own given equation and comutational speed.
 <br><br>
 #### Now Comes the features for customization of the looks of the graph.
-`label=True`<br>
+```label=True```<br>
 It is just the legend on the Graph. It helps to keep track of the function by color coding them.
 <br>
-`grid=False`<br>
+```grid=False```<br>
 This makes grid on the graph for better precision.
 <br>
-`xlabel='x', title=None`<br>
+```xlabel='x', title=None```<br>
 xlabel is the label of the X-axis of the graph. When set to some value Eg: 'Month', ylabel is set to f (Month) automatically.<br>
 To change the ylabel, do g.ylabel = 'Your Y Label here.'
 <br>
 Title is the overall title of the page. Eg: 'Comparing cos(x) with its 4th order Taylor Polynomial.'
-<br>
-
-`lol='upper left'`<br>
+<br>```
+```lol='upper left'```<br>
 lol stands for Location of Legend. It takes standard values as by matplotlib.
 <br>
 
-`linestyle='-'`<br>
+```linestyle='-'```<br>
 This is the style of line that you want to have for your graph. (Values same as matplotlib.)
 <br>
-`mode='light'`<br>
+```mode='light'```<br>
 This has 2 Options. light/dark. Dark will make it with a black background and light text and graph lines.
 <img src="https://i.imgur.com/a00YFpx.png">
 <br>
-`style=None`<br>
+```style=None```<br>
 If you want more customization, then you can give a string of any style available for matplotlib. This can be used to make your Graphs look beautiful.
 <br>
 
@@ -108,7 +116,7 @@ Functions available to you.
 You can use them all easily just by typing them, without even thinking about how are they getting called.
 <br>
 # Sample:
-some equations like, `['sinx', 'cosx', 'e^x', 'pi^tan(x)']` will work without any issue.
+some equations like, ` ['sinx', 'cosx', 'e^x', 'pi^tan(x)'] ` will work without any issue.
 <br>
 <img src="https://i.imgur.com/Ii8Cj7K.png">
 
@@ -116,3 +124,6 @@ some equations like, `['sinx', 'cosx', 'e^x', 'pi^tan(x)']` will work without an
 You have a lot of ways to contribute to this library. It doesnt work with multiple variables, just x and f(x).<br>
 We still dont have 3d graphs, you can help in implimeneting it. Just clone this repo, add featues and request for a Merge.<br>
 
+# Support
+Well, just keep thinking, innovating, graphing and analysing and share. Thats it for support.<br>
+### I Dont Drink Coffee ! So, wont ask to buy me one ;)

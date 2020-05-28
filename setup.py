@@ -3,13 +3,18 @@ from distutils.core import setup
 setup(
   name = 'grapher',
   packages = ['grapher'],
-  version = 'v1.5',
+  version = 'v1.7',
   license='MIT',
   description = 'Compare any number of Mathematical Equations and their graphs to see the level of similarity betweeb them in just one line of code. Eg: Taylor Polynomial',
+  long_description='''
+    This is a Mathematical Grpah Plotting Library that can be used to compare graphs of different equations.\n
+    Now, you can even see the graph of the differentation of any function just by using  `d("func")`\n
+    Complete Documentation: https://github.com/ShubhamGupta-tch/grapher \n
+  ''',
   author = 'Shubham Gupta',
   author_email = 'thecodinghumans@gmail.com',
   url = 'https://github.com/ShubhamGupta-tch/grapher',
-  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.5.tar.gz',
+  download_url = 'https://github.com/ShubhamGupta-tch/grapher/archive/v1.7.tar.gz',
   keywords = ['maths', 'equations', 'graphs', 'Compare graphs', 'plot graphs', 'mathematics', 'graph comparision', 'comparing equations', 'equations comparision'],
   install_requires=[
           'matplotlib',
